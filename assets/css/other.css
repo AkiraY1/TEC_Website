@@ -1,0 +1,49 @@
+/* Three columns side by side */
+.spec-column {
+float: left;
+width: 20%;
+margin-bottom: 16px;
+padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 850px) {
+.spec-column {
+    width: 100%;
+    display: block;
+}
+}
+
+/* Add some shadows to create a card effect */
+
+/* Some left and right padding inside the container */
+.spec-container {
+padding: 0 12px;
+}
+
+/* Clear floats */
+.spec-container::after, .spec-row::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.spec-title {
+color: grey;
+}
+
+.spec-button {
+border: none;
+outline: 0;
+display: inline-block;
+padding: 8px;
+color: white;
+background-color: #000;
+text-align: center;
+cursor: pointer;
+width: 100%;
+}
+
+.spec-button:hover {
+background-color: #555;
+}
